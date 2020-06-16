@@ -4,6 +4,8 @@
 #Developer: Felix O'Farrell
 #06/04/20 
 
+
+
 library(XGR)
 #args called in Nextflow script
 args <- commandArgs(trailingOnly=TRUE)
@@ -32,6 +34,12 @@ e_data <- V(subnet)$name
 
 #enrichment analysis with fisher test (user can stipulate other statistic tests)
 eTerm <- xEnricherGenes(data=e_data, ontology=ontology, test=args[3], RData.location=RData.location)
+
+#store enrich data
+DF <- xEnrichViewer( eTerm,  top_num = 10, sortBy = "pvalue")
+
+#write to DF
+write.csv(DF, "Enrich.csv")
 
 #eTerm_im <- xEnrichConciser(eTerm)
 bp <- xEnrichBarplot(eTerm, top_num='auto', displayBy=args[4])

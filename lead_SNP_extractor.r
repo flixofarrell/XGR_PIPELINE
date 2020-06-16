@@ -5,11 +5,12 @@
 #Developer: Felix O'Farrell
 #06/04/20 
 
+
 #args called in Nextflow script
 args <- commandArgs(trailingOnly=TRUE)
 
 #read in EBI summary statistics as dataframe
-prac_df <- read.csv(args[1])
+prac_df <- read.csv(args[1], sep = '\t')
 
 #XGR input requires loci format of 'chrX'+'locus' e.g.(chr3:13576878)
 #Create new collumn in dataframe called 'location' and merge CHR_ID with CHR_POS 
