@@ -56,6 +56,10 @@ Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/
 add path to summary statistics to bash command (this will overwrite the test file)
 
 ```bash
+nextflow run XGR_PIPELINE.nf --sum_data path/to/your/summary/statistics
+```
+or 
+```bash
 ./nextflow run XGR_PIPELINE.nf --sum_data path/to/your/summary/statistics
 ```
 
