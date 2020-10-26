@@ -51,6 +51,23 @@ or
 ./nextflow run XGR_PIPELINE
 ```
 
+Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
+
+add path to summary statistics to bash command (this will overwrite the test file)
+
+```bash
+./nextflow run XGR_PIPELINE.nf --sum_data path/to/your/summary/statistics
+```
+
+## Parameters
+--sum_data - dir of GWAS summary file
+--nsig - significance cut-off for subnetwork construction
+--ncol - colour scheme         
+--etest - enrichment test
+--stype - statistical test for enrichment
+--outdir - out-directory 
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
