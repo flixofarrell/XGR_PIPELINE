@@ -1,6 +1,8 @@
 matrix:
   include:
     - language: r
+      r:3.6.2
+
       script:
         - echo "r done"
 
@@ -10,3 +12,5 @@ matrix:
         - curl -s https://get.nextflow.io | bash
       script:
         - ./nextflow run XGR_PIPELINE.nf
+
+
