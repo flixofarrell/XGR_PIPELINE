@@ -1,9 +1,8 @@
 matrix:
   include:
     - language: r
-    env:
-  		global:
-    		- R_VERSION="3.6.2"
+    r: 3.6.2
+
 
 
 
