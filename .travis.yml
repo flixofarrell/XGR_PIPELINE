@@ -3,11 +3,10 @@ matrix:
   language: r
 
 
-
   language: java
 
   before_script: 	
-	- curl -s https://get.nextflow.io | bash
+    - curl -s https://get.nextflow.io | bash
   script:
   	- ./nextflow run XGR_PIPELINE.nf 
 
