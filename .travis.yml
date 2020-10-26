@@ -2,7 +2,7 @@ language: java
 
 before_script: curl -s https://get.nextflow.io | bash
 
-script: ./nextflow run XGR_PIPELINE.nf 
+script: nextflow run XGR_PIPELINE.nf 
 
 
 
