@@ -3,7 +3,7 @@
 ## Overview
 Automated downstream pipeline to wrangle EBI-summary statistics and perform subnetwork and enrichment analysis on lead SNPs
 
-GQSLAP performs the following:
+The pipeline performs the following:
    * Wrangle EBI-summary statistic files 
    * Hunt down close genes to each lead SNP
    * Perform subnetwork analysis on close genes 
@@ -13,10 +13,7 @@ GQSLAP performs the following:
 Author: Felix O'Farrell
 Date: April 2020
 
-
 ## Installation
-
-### Clone this github directory onto your system
 
 ## Dependencies 
 
@@ -27,13 +24,13 @@ conda install -c bioconda nextflow
 conda install -c bioconda/label/cf201901 nextflow
 ```
 
-or use curl to download the package into your current directory.
+Or use curl to download the package into your current directory
 
 ```bash
 curl -s https://get.nextflow.io | bash
 ```
 
-Clone this repository onto your machine
+and clone this repository onto your machine
 
 ```bash
 git clone https://github.com/flixofarrell/XGR_PIPELINE.git
@@ -50,6 +47,10 @@ or
 ```bash
 ./nextflow run XGR_PIPELINE
 ```
+
+
+![gitrocker usage GIF](gif/XGR_pipe.gif)
+
 
 Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
 
