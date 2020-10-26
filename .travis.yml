@@ -1,8 +1,7 @@
 matrix:
   include:
     - language: r
-      r:
-      	- release
+
 
       script:
         - echo "r done and done"
