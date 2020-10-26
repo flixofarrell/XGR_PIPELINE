@@ -1,8 +1,12 @@
-language: java
+matrix:
+  include:
+    - language: r
+      script:
+        - echo "r done"
 
-before_script: curl -s https://get.nextflow.io | bash
 
-script: ./nextflow run XGR_PIPELINE.nf 
-
-
-
+    - language: java
+      before_script:
+        - curl -s https://get.nextflow.io | bash
+      script:
+        - ./nextflow run XGR_PIPELINE.nf
