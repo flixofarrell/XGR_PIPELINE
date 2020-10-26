@@ -1,0 +1,7 @@
+Package: FOF_XGR_pipe
+Title: FOF_XGR_pipe: Automated GWAS downstream pipeline
+Version: 0.1
+Depends: R (>= 3.6.2)
+License: MIT
+LazyData: true
+Imports: XGR, RCircos

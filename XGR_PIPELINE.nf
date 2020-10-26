@@ -11,7 +11,7 @@
  * XGR pipeline input parameters
  */
 
-params.sum_data = "/Users/flixofarrell/Desktop/Project_2/downstream/gwas_prac.csv"
+params.sum_data = "test_files/astle_NC.tsv"
 params.nsig = 0.0000001
 params.ncol = "jet"
 params.etest = "fisher"
