@@ -30,6 +30,12 @@ Or use curl to download the package into your current directory
 curl -s https://get.nextflow.io | bash
 ```
 
+Install XGR using bioconda
+
+```bash
+conda install r-xgr
+```
+
 and clone this repository onto your machine
 
 ```bash
