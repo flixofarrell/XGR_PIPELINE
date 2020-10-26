@@ -6,7 +6,7 @@
 
 
 library(XGR)
-library(RCircos)
+#library(RCircos)
 
 #args called in Nextflow script
 args <- commandArgs(trailingOnly=TRUE)
