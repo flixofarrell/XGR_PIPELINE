@@ -60,7 +60,7 @@ process lead_SNP_extraction {
 
     script:
     """
-    Rscript /Users/flixofarrell/Desktop/XGR_PIPELINE/lead_SNP_extractor.r $summary LSNPs.csv
+    Rscript lead_SNP_extractor.r $summary LSNPs.csv
     """
 }
 
@@ -82,7 +82,7 @@ process subnetwork_construction {
 
     script:
     """
-    Rscript /Users/flixofarrell/Desktop/XGR_PIPELINE/subnet_maker.r $lead ${params.nsig} ${params.ncol}
+    Rscript subnet_maker.r $lead ${params.nsig} ${params.ncol}
     """
 }
 
@@ -103,7 +103,7 @@ process enrichment_analysis {
 
     script:
     """
-    Rscript /Users/flixofarrell/Desktop/XGR_PIPELINE/enrichment.r $sub_e $sub_v ${params.etest} ${params.stype}
+    Rscript enrichment.r $sub_e $sub_v ${params.etest} ${params.stype}
     """
 }
 
