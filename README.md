@@ -13,6 +13,9 @@ The pipeline performs the following:
 Author: Felix O'Farrell
 Date: April 2020
 
+![image info](./figure1.png)
+
+
 ## Installation
 
 ## Dependencies 
