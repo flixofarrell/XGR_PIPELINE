@@ -61,7 +61,7 @@ or
 
 Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
 
-![image info](./gif/GWAS-catalog)
+![image info](./gif/GWAS-catalog.png)
 
 
 add path to summary statistics to bash command (this will overwrite the test file)
