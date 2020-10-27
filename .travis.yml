@@ -1,20 +1,12 @@
 matrix:
   include:
     - language: r
-    r: 3.6.2
-
-
-
-
-
       script:
         - echo "r done and done"
-
 
     - language: java
       before_script:
         - curl -s https://get.nextflow.io | bash
+        - apt-get install r-base-core=3.6.2-1precise0precise1
       script:
         - ./nextflow run XGR_PIPELINE.nf
-
-
