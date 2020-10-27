@@ -36,6 +36,7 @@ Install XGR using bioconda
 conda install r-xgr
 ```
 
+
 and clone this repository onto your machine
 
 ```bash
@@ -59,6 +60,9 @@ or
 
 
 Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
+
+![image info](./gif/GWAS-catalog)
+
 
 add path to summary statistics to bash command (this will overwrite the test file)
 
