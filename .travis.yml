@@ -4,9 +4,8 @@ before_script:
 - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
 - bash miniconda.sh -b -p $HOME/miniconda
 - export PATH="$HOME/miniconda/bin:$PATH"
-- conda install -c conda-forge r=3.4.1
-- conda install -c bioconda nextflow
-- conda install r-xgr
+- conda create -q -n test-environment r=3.5.1 r-xgr nextflow
+- source activate test-environment
 script: nextflow run XGR_PIPELINE.nf
 
 
