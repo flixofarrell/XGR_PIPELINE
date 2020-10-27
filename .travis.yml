@@ -1,12 +1,15 @@
-matrix:
-  include:
-    - language: r
-      script:
-        - echo "r done and done"
+language: java
+	before_script:
+		- sudo apt-get update
+  		- apt-get install r-base-core=3.6.2-1precise0precise1
+  		- wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+		- bash miniconda.sh -b -p $HOME/miniconda
+		- export PATH="$HOME/miniconda/bin:$PATH"
+		- conda install -c bioconda nextflow
+		- conda install r-xgr
 
-    - language: java
-      before_script:
-        - curl -s https://get.nextflow.io | bash
-        - apt-get install r-base-core=3.6.2-1precise0precise1
       script:
-        - ./nextflow run XGR_PIPELINE.nf
+        - nextflow run XGR_PIPELINE.nf
+
+
+
