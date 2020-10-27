@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/flixofarrell/XGR_PIPELINE.svg?branch=master)](https://travis-ci.com/flixofarrell/XGR_PIPELINE)
 # XGR Pipeline in Nextflow
 
 ## Overview
