@@ -1,15 +1,13 @@
 language: java
+
 before_script:
-- sudo apt-get update
-- sudo apt-get remove r-base
-- sudo apt-get clean; sudo apt-get autoclean
-- wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
-- bash miniconda.sh -b -p $HOME/miniconda
-- export PATH="$HOME/miniconda/bin:$PATH"
-- conda create -q -n test-environment -y
-- source activate test-environment
-- conda install -c conda-forge r=3.6.2
-- conda install -c bioconda/label/gcc7 r-xgr -y
-- conda install -c bioconda nextflow
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  - conda install -c bioconda/label/gcc7 r-xgr -y
+  - conda install -c bioconda nextflow
 
 script: nextflow run XGR_PIPELINE.nf
