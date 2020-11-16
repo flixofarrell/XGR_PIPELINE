@@ -10,6 +10,6 @@ before_script:
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
   - conda env create -f xgrfof.yml
-  - bash
+  - conda init bash
   - conda activate xgrfof
 script: nextflow run XGR_PIPELINE.nf
