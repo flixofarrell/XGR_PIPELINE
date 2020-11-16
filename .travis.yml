@@ -9,7 +9,6 @@ before_script:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
-  - conda install -c bioconda/label/gcc7 r-xgr -y
-  - conda install -c bioconda nextflow
+  - conda env create -f xgrfof.yml
 
 script: nextflow run XGR_PIPELINE.nf
