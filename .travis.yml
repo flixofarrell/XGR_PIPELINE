@@ -9,10 +9,7 @@ before_script:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
+  - source activate xgrfof
   - conda env create -f xgrfof.yml
-  - export -f conda
-  - export -f __conda_activate
-  - export -f __conda_reactivate
-  - export -f __conda_hashr
-  - conda activate xgrfof
+  - source activate xgrfof
 script: nextflow run XGR_PIPELINE.nf
