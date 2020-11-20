@@ -64,7 +64,7 @@ or
 ![gitrocker usage GIF](gif/XGR_pipe.gif)
 
 
-Downlaod summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
+Download summary statistics from GWAS catalog [here](https://www.ebi.ac.uk/gwas/downloads/summary-statistics).
 
 ![image info](./gif/GWAS-catalog.png)
 
