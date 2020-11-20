@@ -1,4 +1,4 @@
-![GitHub top language](https://img.shields.io/github/languages/top/flixofarrell/XGR_PIPELINE)
+[![Build Status](https://travis-ci.com/flixofarrell/XGR_PIPELINE.svg?branch=master)](https://travis-ci.com/flixofarrell/XGR_PIPELINE) ![GitHub top language](https://img.shields.io/github/languages/top/flixofarrell/XGR_PIPELINE)
 [![CodeFactor](https://www.codefactor.io/repository/github/flixofarrell/xgr_pipeline/badge)](https://www.codefactor.io/repository/github/flixofarrell/xgr_pipeline)
 # XGR Pipeline in Nextflow
 
