@@ -2,8 +2,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/flixofarrell/xgr_pipeline/badge)](https://www.codefactor.io/repository/github/flixofarrell/xgr_pipeline)
 # XGR Pipeline in Nextflow
 
-
-
 ## Overview
 Automated downstream pipeline to wrangle EBI-summary statistics and perform subnetwork and enrichment analysis on lead SNPs
 
